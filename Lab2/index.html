@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moja Strona</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Dawid Stanisz</h1>
+    </header>
+    
+    <main>
+        <p>
+            Super opis super strony
+        </p>
+        <p>
+            <a href="https://www.google.pl/" target="_blank">Google.pl</a>
+        </p>
+
+        <ul>
+            <li>Pierwszy element listy</li>
+            <li>Drugi element listy</li>
+            <li>Trzeci element listy</li>
+        </ul>
+
+        <img src="like.png" alt="like">
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Nazwa</th>
+                    <th>Data</th>
+                    <th>Opis</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Lab1</td>
+                    <td>12.03.2025</td>
+                    <td>Pierwsze zajęcia programowania</td>
+                </tr>
+                <tr>
+                    <td>Lab2</td>
+                    <td>19.03.2025</td>
+                    <td>Drugie zajęcia programowania</td>
+                </tr>
+                <tr>
+                    <td>LAb3</td>
+                    <td>26.03.2025</td>
+                    <td>Trzecie zajęcia programowania</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Formularz</h2>
+        <form action="/submit-form" method="post">
+            <label for="name">Imię:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <input type="checkbox" id="newsletter" name="newsletter">
+            <label for="newsletter">Chcę zapisać się na newsletter</label><br><br>
+
+            <button type="submit">Wyślij</button>
+        </form>
+    </main>
+</body>
+</html>
