@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Konwersja</title>
+</head>
+<body>
+    <script>
+        function konwertujCelsjuszNaFahrenheit() {
+            let celsjusz = prompt("Podaj temperaturę w °C:");
+            let fahrenheit = (parseFloat(celsjusz) * 9/5) + 32;
+            console.log(`${celsjusz}°C to ${fahrenheit.toFixed(2)}°F`);
+            alert(`${celsjusz}°C to ${fahrenheit.toFixed(2)}°F`);
+        }
+
+        konwertujCelsjuszNaFahrenheit();
+
+    </script>
+</body>
+</html>

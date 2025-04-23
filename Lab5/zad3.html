@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tablica liczb</title>
+</head>
+
+<body>
+    <script>
+        let liczby = [12, 7, 5, 20, 33, 8, 15, 12];
+
+        let suma = liczby.reduce((acc, num) => acc + num, 0);
+        console.log(`Suma wartości: ${suma}`);
+
+        let parzyste = liczby.filter(num => num % 2 === 0);
+        console.log(`Liczby parzyste: ${parzyste.join(', ')}`);
+
+        let pomnozone = liczby.map(num => num * 3);
+        console.log(`Wartości pomnożone razy 3: ${pomnozone.join(', ')}`);
+
+        let numerAlbumu = 72420;
+        liczby.push(numerAlbumu);
+        let indexAlbumu = liczby.indexOf(numerAlbumu);
+        console.log(`Numer albumu: ${numerAlbumu}, Index: ${indexAlbumu}`);
+
+        let srednia = suma / liczby.length;
+        console.log(`Średnia: ${srednia.toFixed(2)}`);
+
+        let maxLiczba = Math.max(...liczby);
+        console.log(`Największa liczba: ${maxLiczba}`);
+
+        let szukanaLiczba = 12;
+        let iloscWystapien = liczby.filter(num => num === szukanaLiczba).length;
+        console.log(`Liczba ${szukanaLiczba} występuje ${iloscWystapien} razy`);
+
+
+    </script>
+</body>
+
+</html>
