@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        button {
+            background-color: white;
+        }
+
+    </style>
+</head>
+
+<body>
+    <button onclick="zmienWidocznosc()">Pokaż/Ukryj</button>
+    <div id="element">Tekst</div>
+
+    <script>
+        function zmienWidocznosc() {
+            const element = document.getElementById("element");
+
+            if (element.style.display === "none") {
+                element.style.display = "block"; 
+            } else {
+                element.style.display = "none"; 
+            }
+        }
+    </script>
+
+</body>
+
+</html>

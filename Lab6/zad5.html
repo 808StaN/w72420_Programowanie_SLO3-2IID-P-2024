@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+<style>
+    table {
+        margin: 20px auto;
+        border-collapse: collapse;
+        width: 50%;
+    }
+
+    th,
+    td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: center;
+    }
+
+    th {
+        background-color: lightgray;
+    }
+</style>
+
+<body>
+    <h1>Dodaj dane do tabeli</h1>
+    <input type="text" id="imie">
+    <input type="text" id="nazwisko">
+    <button onclick="dodajDoTabeli()">Dodaj</button>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Imię</th>
+                <th>Nazwisko</th>
+            </tr>
+        </thead>
+        <tbody id="tabela">
+        </tbody>
+    </table>
+    <script>
+        function dodajDoTabeli() {
+            const imie = document.getElementById("imie").value;
+            const nazwisko = document.getElementById("nazwisko").value;
+            const tabela = document.getElementById("tabela");
+
+            if (imie.trim() === "" || nazwisko.trim() === "") {
+                alert();
+                return;
+            }
+
+            const nowyWiersz = document.createElement("tr");
+            nowyWiersz.innerHTML = `<td>${imie}</td><td>${nazwisko}</td>`;
+            tabela.appendChild(nowyWiersz);
+
+            document.getElementById("imie").value = "";
+            document.getElementById("nazwisko").value = "";
+        }
+    </script>
+
+</body>
+
+</html>

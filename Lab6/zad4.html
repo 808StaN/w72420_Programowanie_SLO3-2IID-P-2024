@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        button {
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <input type="text" id="tekst">
+    <button onclick="dodajDoListy()">Dodaj element</button>
+    <ul id="lista"></ul>
+
+    <script>
+        function dodajDoListy() {
+            const tekst = document.getElementById("tekst").value;
+            const lista = document.getElementById("lista");
+
+           
+            const nowyElement = document.createElement("li");
+            nowyElement.textContent = tekst;
+            lista.appendChild(nowyElement);
+
+            document.getElementById("tekst").value = "";
+        }
+    </script>
+
+</body>
+
+</html>
