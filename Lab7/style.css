@@ -8,10 +8,12 @@ body {
 form {
     justify-content: center;
     color: white;
+     
 
+}
 
-    
-
+div {
+    align-items: center;
 }
 
 
@@ -28,6 +30,11 @@ button, select {
     background-color: white;
     border-radius: 2px;
     border: none;
+}
+
+input:focus {
+   border-color: white;
+   border: solid;
 }
 
 h2, h3 {
