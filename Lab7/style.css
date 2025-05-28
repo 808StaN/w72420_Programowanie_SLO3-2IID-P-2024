@@ -1,0 +1,49 @@
+body {
+    background: linear-gradient(to bottom, #160866, #003482);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+form {
+    justify-content: center;
+    color: white;
+
+
+    
+
+}
+
+
+input {
+    background-color: #7da3dddc;
+    border: none;
+    color: white;
+    border-radius: 2px;
+}
+
+button, select {
+    height: 25px;
+    width: 75px;;
+    background-color: white;
+    border-radius: 2px;
+    border: none;
+}
+
+h2, h3 {
+    color:white;
+}
+
+ul {
+    color: white;
+}
+
+.hidden {
+    visibility: hidden; 
+}
+
+label {
+    padding: 5px;
+    margin-top: 5px;
+    justify-content: center;
+}

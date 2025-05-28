@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <body>
+            <h2 id="welcome-message">Witaj na stronie!</h2>
+           
+        
+            <form action="#" method="POST">
+                <label for="imie">Imię:</label>
+                <input type="text" id="imie" name="imie" oninput="updateWelcomeMessage()"><br>
+        
+                <label for="nazwisko">Nazwisko:</label>
+                <input type="text" id="nazwisko" name="nazwisko" required><br>
+        
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+        
+                <label for="haslo">Hasło:</label>
+                    <input type="password" id="haslo" name="haslo" required>
+
+                <label>
+                    <input type="checkbox" id="togglePassword" onclick="togglePasswordVisibility()">
+                        Pokaż hasło
+                </label><br>
+
+        
+                <label>Płeć:</label>
+                <input type="radio" id="mezczyzna" name="plec" value="M">
+                <label for="mezczyzna">Mężczyzna</label>
+        
+                <input type="radio" id="kobieta" name="plec" value="K">
+                <label for="kobieta">Kobieta</label><br>
+        
+                <label for="telefon">Telefon:</label>
+
+                <input type="tel" id="telefon" name="telefon" required>
+                <label>
+                    <input type="checkbox" id="togglePhone" onclick="togglePhoneField()">
+                    Ukryj pole telefon
+                </label><br>
+        
+                <label for="data_urodzenia">Data urodzenia:</label>
+                <input type="date" id="data_urodzenia" name="data_urodzenia" required><br>
+        
+                <label for="kraj">Kraj:</label>
+                    <select id="kraj">
+                        <option value="" disabled selected>Wybierz kraj</option>
+                        <option value="Polska">Polska</option>
+                    <option value="Niemcy">Niemcy</option>
+                    <option value="Francja">Francja</option>
+                    <option value="Włochy">Włochy</option>
+                    </select>
+                               
+        
+                <button type="submit">Zapisz</button>
+            
+                <form id="hobbyForm">
+                    <h3>Wybierz swoje hobby:</h3>
+                    
+                    <label><input type="checkbox" name="hobby" value="Sport"> Sport</label>
+                    <label><input type="checkbox" name="hobby" value="Muzyka"> Muzyka</label>
+                    <label><input type="checkbox" name="hobby" value="Podróże"> Podróże</label>
+                    <label><input type="checkbox" name="hobby" value="Gry"> Gry</label>
+                    <label><input type="checkbox" name="hobby" value="Czytanie"> Czytanie</label>
+                
+                    <button type="button" onclick="pokazHobby()">Zapisz</button>
+                </form>
+                
+                <h3>Twoje hobby:</h3>
+                <ul id="listaHobby"></ul>
+                
+
+
+
+
+            <script src="zad2.js"></script>
+            <script src="zad3.js"></script>
+            <script src="zad4.js"></script>
+            <script src="zad5.js"></script>
+            <script src="zad6.js"></script>
+        </body>
+    </head>
+</html>
